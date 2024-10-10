@@ -92,7 +92,8 @@
           "icon": "bug",
           "pages": [
             "configuring/debug/profiler",
-            "configuring/debug/telemetry"
+            "configuring/debug/telemetry",
+            "configuring/debug/parseable"
           ]
         },
         {
