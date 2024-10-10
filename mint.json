@@ -69,7 +69,21 @@
                 "configuring/authentication/azure"
               ]
             },
-            "configuring/new-model",
+            {
+              "group": "Models",
+              "icon": "gear",
+              "pages": [
+                "configuring/models/index",
+                "configuring/models/new-model"
+              ]
+            },
+            {
+              "group": "Stripe",
+              "icon": "credit-card",
+              "pages": [
+                "configuring/stripe/index"
+              ]
+            },
             "configuring/increase-user-usage",
             "configuring/resend-emails",
             "configuring/reranking",
@@ -77,8 +91,7 @@
             "configuring/environment-variables",
             "configuring/profiler",
             "configuring/telemetry",
-            "configuring/supabase-setup",
-            "configuring/brave-search"
+            "configuring/supabase-setup"
           ]
         },
         "tech-design",
@@ -96,15 +109,23 @@
     },
     {
       "group": "Brains",
-      "pages": ["brains/docs-and-urls", "brains/gpt4", "brains/sql"]
+      "pages": [
+        "brains/docs-and-urls",
+        "brains/gpt4",
+        "brains/sql"
+      ]
     },
     {
       "group": "Assistants",
-      "pages": ["agents/summary"]
+      "pages": [
+        "agents/summary"
+      ]
     },
     {
       "group": "Privacy and Compliance",
-      "pages": ["privacy-and-compliance"]
+      "pages": [
+        "privacy-and-compliance"
+      ]
     }
   ],
   "footerSocials": {

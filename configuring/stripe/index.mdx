@@ -1,0 +1,18 @@
+---
+title: Deactivate Stripe
+description: Learn how to deactivate Stripe in Quivr.
+---
+
+## Deactivate Stripe in Backend
+The Quivr platform allows user to buy more credits to use the platform. This is done through Stripe.
+
+If you want to deactivate Stripe, you need to set the `DEACTIVATE_STRIPE=true` to an empty string. This will disable the payment system and the users will not be able to buy more credits.
+
+You can do this by updating the `.env` file.
+
+## Hide Tokens in Frontend
+
+If you want to hide the tokens in the frontend, you need to set the `NEXT_PUBLIC_SHOW_TOKENS=false` to an empty string. This will hide the tokens in the frontend.
+
+You can do this by updating the `.env` file.
+
