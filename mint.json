@@ -61,7 +61,15 @@
           "group": "Configuring",
           "icon": "gear",
           "pages": [
-            "configuring/authentication",
+            {
+              "group": "Authentication",
+              "icon": "key",
+              "pages": [
+                "configuring/authentication/index",
+                "configuring/authentication/google",
+                "configuring/authentication/azure"
+              ]
+            },
             "configuring/new-model",
             "configuring/increase-user-usage",
             "configuring/resend-emails",
