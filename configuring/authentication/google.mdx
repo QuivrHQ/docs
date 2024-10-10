@@ -1,0 +1,61 @@
+---
+title: Google SSO
+description: Learn how to configure Google SSO in Quivr.
+---
+
+# Google
+
+Supabase Auth supports Sign in with Google for the web, native Android applications, and Chrome extensions.
+
+## Prerequisites
+
+- A Google Cloud project. Go to the [Google Cloud Platform](https://console.cloud.google.com/) and create a new project if necessary.
+
+## Configuration
+
+To support Sign In with Google, you need to configure the Google provider for your Supabase project.
+
+#### Application Code Configuration
+
+To use your own application code:
+
+1. In the Google Cloud console, go to the [Consent Screen configuration page](https://console.cloud.google.com/apis/credentials/consent).
+   - The consent screen is the view shown to your users when they consent to signing in to your app.
+2. Under **Authorized domains**, add your Supabase project's domain, which has the form `<PROJECT_ID>.supabase.co`.
+3. Configure the following non-sensitive scopes:
+   - `.../auth/userinfo.email`
+   - `...auth/userinfo.profile`
+   - `openid`
+4. Go to the [API Credentials page](https://console.cloud.google.com/apis/credentials).
+5. Click **Create credentials** and choose **OAuth Client ID**.
+6. For application type, choose **Web application**.
+7. Under **Authorized JavaScript origins**, add your site URL.
+8. Under **Authorized redirect URLs**, enter the callback URL from the Supabase dashboard.
+   - Expand the Google Auth Provider section to display it.
+   - The redirect URL is visible to your users. You can customize it by configuring custom domains.
+9. When you finish configuring your credentials, you will be shown your client ID and secret.
+   - Add these to the Google Auth Provider section of the Supabase Dashboard.
+   - In local development, you can add the client ID and secret to your `config.toml` file.
+
+#### Google Pre-built Configuration
+
+To use Google's pre-built signin buttons:
+
+1. In the Google Cloud console, go to the [Consent Screen configuration page](https://console.cloud.google.com/apis/credentials/consent).
+   - The consent screen is the view shown to your users when they consent to signing in to your app.
+   - Configure the screen to your liking, making sure you add links to your app's privacy policy and terms of service.
+2. Go to the [API Credentials page](https://console.cloud.google.com/apis/credentials).
+3. Click **Create credentials** and choose **OAuth Client ID**.
+4. For application type, choose **Web application**.
+5. Under **Authorized JavaScript origins** and **Authorized redirect URLs**, add your site URL.
+   - This is the URL of the website where the signin button will appear, not your Supabase project domain.
+   - If you're testing in localhost, ensure that you have `http://localhost` set in the Authorized JavaScript origins section as well. This is important when integrating with Google One-Tap to ensure you can use it locally.
+6. When you finish configuring your credentials, you will be shown your client ID.
+   - Add this to the Authorized Client IDs field in the Google Auth Provider section of the Supabase Dashboard.
+   - Leave the OAuth client ID and secret blank. You don't need them when using Google's pre-built approach.
+
+## Self Hosted Setup
+
+When self-hosting, you need to set the following variables in your `config.toml` file in supabase.
+
+[https://supabase.com/docs/guides/local-development/cli/config#auth-config](https://supabase.com/docs/guides/local-development/cli/config#auth-config)

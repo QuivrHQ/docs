@@ -1,0 +1,45 @@
+---
+title: Azure SSO
+description: Learn how to configure Azure SSO in Quivr.
+---
+
+To enable Azure (Microsoft) Auth for your project, you need to set up an Azure OAuth application and add the application credentials to your Supabase Dashboard.
+
+## Overview
+
+Setting up OAuth with Azure consists of four broad steps:
+
+1. Create an OAuth application under Azure Entra ID.
+2. Add a secret to the application.
+3. Add the Supabase Auth callback URL to the allowlist in the OAuth application in Azure.
+4. Configure the client ID and secret of the OAuth application within the Supabase Auth dashboard.
+
+## Access your Azure Developer account
+
+1. Go to [portal.azure.com](https://portal.azure.com).
+2. Login and select **Microsoft Entra ID** under the list of Azure Services.
+
+## Register an application
+
+1. Under **Microsoft Entra ID**, select **App registrations** in the side panel and select **New registration**.
+2. Choose a name and select your preferred option for the supported account types.
+3. Specify a Web Redirect URI. It should look like this: `https://<project-ref>.supabase.co/auth/v1/callback`
+4. Finally, select **Register** at the bottom of the screen.
+
+## Obtain a client ID and secret
+
+1. Once your app has been registered, the client ID can be found under the list of app registrations under the column titled **Application (client) ID**. You can also find it in the app overview screen.
+2. Place the Client ID in the Azure configuration screen in the Supabase Auth dashboard.
+
+### Add a certificate or secret
+
+1. Select **Add a certificate or secret** in the app overview screen and open the **Client secrets** tab.
+2. Select **New client secret** to create a new client secret.
+3. Choose a preferred expiry time of the secret. Make sure you record this in your calendar days in advance so you have enough time to create a new one without suffering from any downtime.
+4. Once the secret is generated, place the **Value** column (not Secret ID) in the Azure configuration screen in the Supabase Auth dashboard.
+
+## Self Hosted Setup
+
+When self-hosting, you need to set the following variables in your `config.toml` file in supabase.
+
+[https://supabase.com/docs/guides/local-development/cli/config#auth-config](https://supabase.com/docs/guides/local-development/cli/config#auth-config)
