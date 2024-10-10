@@ -13,6 +13,10 @@
   },
   "topbarLinks": [
     {
+      "name": "Open-source Docs",
+      "url": "https://core.quivr.com"
+    },
+    {
       "name": "Support",
       "url": "mailto:stan@quivr.app"
     }
@@ -31,6 +35,11 @@
       "name": "API Docs",
       "icon": "globe",
       "url": "https://api.quivr.app/docs"
+    },
+    {
+      "name": "Github",
+      "icon": "github",
+      "url": "https://github.com/quivrhq/quivr"
     },
     {
       "name": "Status",
