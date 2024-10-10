@@ -55,53 +55,71 @@
             "features/brain-customisation"
           ]
         },
-        "slackbot",
-        {
-          "group": "Configuring",
-          "icon": "gear",
-          "pages": [
-            {
-              "group": "Authentication",
-              "icon": "key",
-              "pages": [
-                "configuring/authentication/index",
-                "configuring/authentication/google",
-                "configuring/authentication/azure"
-              ]
-            },
-            {
-              "group": "Models",
-              "icon": "gear",
-              "pages": [
-                "configuring/models/index",
-                "configuring/models/new-model"
-              ]
-            },
-            {
-              "group": "Stripe",
-              "icon": "credit-card",
-              "pages": [
-                "configuring/stripe/index"
-              ]
-            },
-            {
-              "group": "Debug",
-              "icon": "bug",
-              "pages": [
-                "configuring/debug/profiler",
-                "configuring/debug/telemetry"
-              ]
-            },
-            "configuring/increase-user-usage",
-            "configuring/resend-emails",
-            "configuring/reranking",
-            "configuring/llamaparse",
-            "configuring/environment-variables",
-            "configuring/supabase-setup"
-          ]
-        },
         "tech-design",
         "contact-us"
+      ]
+    },
+    {
+      "group": "Configuring",
+      "icon": "gear",
+      "pages": [
+        {
+          "group": "Authentication",
+          "icon": "key",
+          "pages": [
+            "configuring/authentication/index",
+            "configuring/authentication/google",
+            "configuring/authentication/azure"
+          ]
+        },
+        {
+          "group": "Models",
+          "icon": "gear",
+          "pages": [
+            "configuring/models/index",
+            "configuring/models/new-model"
+          ]
+        },
+        {
+          "group": "Stripe",
+          "icon": "credit-card",
+          "pages": [
+            "configuring/stripe/index"
+          ]
+        },
+        {
+          "group": "Debug",
+          "icon": "bug",
+          "pages": [
+            "configuring/debug/profiler",
+            "configuring/debug/telemetry"
+          ]
+        },
+        {
+          "group": "Users",
+          "icon": "user",
+          "pages": [
+            "configuring/users/increase-user-usage"
+          ]
+        },
+        {
+          "group": "Emails",
+          "icon": "envelope",
+          "pages": [
+            "configuring/emails/resend-emails"
+          ]
+        },
+        {
+          "group": "Others",
+          "icon": "gear",
+          "pages": [
+            "configuring/others/reranking",
+            "configuring/others/llamaparse",
+            "configuring/others/environment-variables",
+            "configuring/others/supabase-setup"
+          ]
+        },
+        "slackbot"
       ]
     },
     {
