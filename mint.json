@@ -112,20 +112,6 @@
       ]
     },
     {
-      "group": "Brains",
-      "pages": [
-        "brains/docs-and-urls",
-        "brains/gpt4",
-        "brains/sql"
-      ]
-    },
-    {
-      "group": "Assistants",
-      "pages": [
-        "agents/summary"
-      ]
-    },
-    {
       "group": "Privacy and Compliance",
       "pages": [
         "privacy-and-compliance"
