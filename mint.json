@@ -84,13 +84,19 @@
                 "configuring/stripe/index"
               ]
             },
+            {
+              "group": "Debug",
+              "icon": "bug",
+              "pages": [
+                "configuring/debug/profiler",
+                "configuring/debug/telemetry"
+              ]
+            },
             "configuring/increase-user-usage",
             "configuring/resend-emails",
             "configuring/reranking",
             "configuring/llamaparse",
             "configuring/environment-variables",
-            "configuring/profiler",
-            "configuring/telemetry",
             "configuring/supabase-setup"
           ]
         },
@@ -102,9 +108,7 @@
       "group": "Deploy Quivr",
       "pages": [
         "deployment/porter",
-        "deployment/aws",
-        "deployment/digital_ocean",
-        "deployment/vercel"
+        "deployment/digital_ocean"
       ]
     },
     {
