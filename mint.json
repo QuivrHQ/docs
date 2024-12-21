@@ -49,6 +49,49 @@
   ],
   "navigation": [
     {
+      "group": "Open Source",
+      "icon": "rocket",
+      "pages": [
+        "open-source/quickstart",
+        {
+          "group": "Workflows",
+          "icon": "flow-chart",
+          "pages": [
+            "open-source/workflows/index",
+            "open-source/workflows/examples/basic_rag",
+            "open-source/workflows/examples/rag_with_web_search"
+          ]
+        },
+        {
+          "group": "Examples",
+          "icon": "code",
+          "pages": [
+            "open-source/examples/index",
+            "open-source/examples/chatbot",
+            "open-source/examples/chatbot_voice"
+          ]
+        },
+        {
+          "group": "Configuration",
+          "icon": "gear",
+          "pages": [
+            "open-source/config/index",
+            "open-source/config/base_config",
+            "open-source/config/config"
+          ]
+        },
+        {
+          "group": "Parsers",
+          "icon": "document",
+          "pages": [
+            "open-source/parsers/index",
+            "open-source/parsers/simple",
+            "open-source/parsers/megaparse"
+          ]
+        }
+      ]
+    },
+    {
       "group": "Welcome to Quivr",
       "pages": [
         "intro",
