@@ -35,7 +35,7 @@ This example demonstrates how to create a voice-enabled chatbot using Quivr, Fla
    QUIVR_API_KEY='your_quivr_api_key'
    QUIVR_CHAT_ID='your_quivr_chat_id'
    QUIVR_BRAIN_ID='your_quivr_brain_id'
-   QUIVR_URL='https://api.quivr.app'
+   QUIVR_URL='http://localhost:8000'  # Update this to your local or deployed Quivr instance URL
    ```
 
 ## Usage

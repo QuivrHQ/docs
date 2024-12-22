@@ -1,5 +1,9 @@
-# RAG with web search
+---
+title: RAG with Web Search
+description: Create an advanced RAG workflow with web search capabilities
+---
 
+# RAG with web search
 
 ![](rag_with_web_search.excalidraw.png)
 

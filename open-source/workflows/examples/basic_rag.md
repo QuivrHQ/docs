@@ -1,3 +1,8 @@
+---
+title: Basic RAG
+description: Learn how to create a basic RAG workflow with Quivr
+---
+
 # Basic RAG
 
 ![](basic_rag.excalidraw.png)

@@ -68,7 +68,7 @@ brain = Brain.from_files(name = "my smart brain",
                         )
 ```
 
-Note : [Embeddings](https://python.langchain.com/docs/integrations/text_embedding/) is a langchain class that lets you chose from a large variety of embedding models. Please check out the following docs to know the panel of models you can try.
+Note: The Embeddings class from LangChain lets you choose from a large variety of embedding models. You can configure different models like OpenAI, Cohere, or HuggingFace embeddings based on your needs.
 
 ## Launch with Chainlit
 
@@ -78,6 +78,6 @@ cd examples/chatbot /
 rye sync /
 rye run chainlit run chainlit.py
 ```
-For more detail, go in [examples/chatbot/chainlit.md](https://github.com/QuivrHQ/quivr/tree/main/examples/chatbot)
+For more details, check out our [Chatbot Example](/open-source/examples/chatbot) guide.
 
 Note : Modify the Brain configs directly in examples/chatbot/main.py;

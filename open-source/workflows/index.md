@@ -1,3 +1,22 @@
+---
+title: Workflows
+description: Examples of RAG workflows you can create with Quivr
+---
+
 # Workflows
 
 In this section, you will find examples of workflows that you can use to create your own agentic RAG systems.
+
+## Available Workflows
+
+### [Basic RAG](/open-source/workflows/examples/basic_rag)
+Learn how to create a basic RAG workflow with Quivr. This example demonstrates the fundamental concepts of retrieval-augmented generation.
+
+### [RAG with Web Search](/open-source/workflows/examples/rag_with_web_search)
+Explore an advanced RAG workflow that includes web search capabilities, user intention detection, and dynamic chunk retrieval.
+
+Each workflow example includes:
+- Detailed step-by-step instructions
+- Configuration files and code samples
+- Visual diagrams explaining the workflow
+- Tips for customization and optimization

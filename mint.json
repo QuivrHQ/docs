@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/schema.json",
   "name": "Quivr",
-  "index": "intro",
+  "index": "open-source/index",
   "favicon": "/favicon.svg",
   "colors": {
     "primary": "#0D9373",
@@ -14,38 +14,29 @@
   },
   "topbarLinks": [
     {
-      "name": "Open-source Docs",
-      "url": "https://core.quivr.com"
+      "name": "Open Source",
+      "url": "/open-source/quickstart"
     },
     {
-      "name": "Support",
-      "url": "mailto:stan@quivr.app"
+      "name": "Enterprise",
+      "url": "/install"
     }
   ],
   "topbarCtaButton": {
-    "name": "Try Quivr",
-    "url": "https://quivr.app"
+    "name": "Get Started",
+    "url": "/open-source/quickstart"
   },
+  "redirects": [],
   "anchors": [
     {
-      "name": "Community",
-      "icon": "discord",
-      "url": "https://discord.gg/HUpRgp2HG8"
+      "name": "Open Source",
+      "icon": "rocket",
+      "url": "open-source/quickstart"
     },
     {
-      "name": "API Docs",
-      "icon": "globe",
-      "url": "https://api.quivr.app/docs"
-    },
-    {
-      "name": "Github",
-      "icon": "github",
-      "url": "https://github.com/quivrhq/quivr"
-    },
-    {
-      "name": "Status",
-      "icon": "signal",
-      "url": "https://uptime.quivr.app"
+      "name": "Workflows",
+      "icon": "flow-chart",
+      "url": "open-source/workflows/index"
     }
   ],
   "navigation": [
@@ -53,11 +44,10 @@
       "group": "Open Source",
       "icon": "rocket",
       "pages": [
-        "intro",
+        "open-source/index",
         "open-source/quickstart",
         {
           "group": "Workflows",
-          "icon": "flow-chart",
           "pages": [
             "open-source/workflows/index",
             "open-source/workflows/examples/basic_rag",
@@ -192,28 +182,21 @@
       ]
     }
   ],
-  "footerSocials": {
-    "twitter": "https://twitter.com/quivr_brain",
-    "github": "https://github.com/quivrhq/quivr",
-    "linkedin": "https://www.linkedin.com/company/getquivr",
-    "discord": "https://discord.gg/HUpRgp2HG8"
-  },
-  "openapi": "https://api.quivr.app/openapi.json",
+  "footerSocials": {},
   "feedback": {
     "thumbsRating": true,
-    "raiseIssue": true,
-    "suggestEdit": true
+    "raiseIssue": false,
+    "suggestEdit": false
   },
-  "api": {
-    "baseUrl": "https://api.quivr.app",
-    "auth": {
-      "method": "bearer"
-    }
+  "api": {},
+  "footer": {
+    "text": "© 2024 Quivr",
+    "copyright": "© 2024 Quivr"
   },
+  "theme": "venus",
   "analytics": {
     "posthog": {
-      "apiKey": "phc_BqYCVB8PX7VlzNU5MjbN8sET6soqW7jQVq6PrT9pJSJ",
-      "apiHost": "https://us.posthog.com"
+      "apiKey": "phc_disabled"
     }
   }
 }
