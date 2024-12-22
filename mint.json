@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/schema.json",
   "name": "Quivr",
-  "index": "intro",
+  "index": "open-source/quickstart",
   "favicon": "/favicon.svg",
   "colors": {
     "primary": "#0D9373",
@@ -50,26 +50,6 @@
   ],
   "navigation": [
     {
-      "group": "Welcome to Quivr",
-      "pages": [
-        "intro",
-        "install",
-        {
-          "group": "Features",
-          "icon": "lightbulb",
-          "pages": [
-            "features/brain-creation",
-            "features/brain-sharing",
-            "features/quivr-assistants",
-            "features/chat",
-            "features/brain-customisation"
-          ]
-        },
-        "tech-design",
-        "contact-us"
-      ]
-    },
-    {
       "group": "Open Source",
       "icon": "rocket",
       "pages": [
@@ -113,9 +93,9 @@
       ]
     },
     {
-      "group": "Welcome to Quivr",
+      "group": "Enterprise",
+      "icon": "building",
       "pages": [
-        "intro",
         "install",
         {
           "group": "Features",
@@ -189,8 +169,7 @@
           "pages": [
             "configuring/others/reranking",
             "configuring/others/llamaparse",
-            "configuring/others/environment-variables",
-            "configuring/others/supabase-setup"
+            "configuring/others/environment-variables"
           ]
         },
         "slackbot"
