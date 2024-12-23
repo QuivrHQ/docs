@@ -29,25 +29,26 @@
   "redirects": [],
   "anchors": [
     {
-      "name": "Open Source",
+      "name": "Quivr",
       "icon": "rocket",
-      "url": "open-source/quickstart"
+      "url": "https://quivr.com"
     },
     {
-      "name": "Workflows",
-      "icon": "flow-chart",
-      "url": "open-source/workflows/index"
+      "name": "Megaparse",
+      "icon": "file",
+      "url": "https://megaparse.com"
     }
   ],
   "navigation": [
     {
-      "group": "Open Source",
+      "group": "Quivr",
       "icon": "rocket",
       "pages": [
         "open-source/index",
         "open-source/quickstart",
         {
           "group": "Workflows",
+          "icon": "microchip",
           "pages": [
             "open-source/workflows/index",
             "open-source/workflows/examples/basic_rag",
@@ -74,7 +75,7 @@
         },
         {
           "group": "Parsers",
-          "icon": "document",
+          "icon": "file",
           "pages": [
             "open-source/parsers/index",
             "open-source/parsers/simple",
